@@ -1,8 +1,11 @@
-import { createActionGroup } from '@ngrx/store';
+import { createActionGroup, props } from '@ngrx/store';
+import { User } from './user.model';
 
 export const UserActions = createActionGroup({
   source: 'User',
-  events: {},
+  events: {
+    'Login User': props<{ user: User }>(),
+  },
 });
 
 export const UserApiActions = createActionGroup({

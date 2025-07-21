@@ -1,1 +1,19 @@
-<div>Register Page Working!</div>
+<form class="register-form" #form (ngSubmit)="onRegister()">
+  <h2>Register</h2>
+  <edc-form-control label="First Name">
+    <input name="firstName" id="firstName" />
+  </edc-form-control>
+  <edc-form-control label="Last Name">
+    <input name="lastName" id="lastName" />
+  </edc-form-control>
+  <edc-form-control label="Email">
+    <input name="email" id="email" />
+  </edc-form-control>
+  <edc-form-control label="Password">
+    <input name="password" id="password" type="password" />
+  </edc-form-control>
+
+  <button class="btn-primary">Register</button>
+
+  <p>Already have an account? <a href="login">Login</a></p>
+</form>

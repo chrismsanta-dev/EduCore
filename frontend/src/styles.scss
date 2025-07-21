@@ -1,1 +1,30 @@
 @use "tailwindcss" as tailwind;
+@use "./styles/buttons.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+edc-root {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+// @theme {
+//   --color-primary: #283618;
+//   --color-primary-light: #606c38;
+//   --color-secondary: #bc6c25;
+//   --color-secondary-light: #dda15e;
+//   --color-background: #f9f9f9;
+// }

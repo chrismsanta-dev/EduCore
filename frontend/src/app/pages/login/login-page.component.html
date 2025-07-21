@@ -1,1 +1,13 @@
-<div>Login Page Working!</div>
+<form class="login-form" #form (ngSubmit)="onLogin()">
+  <h2>Login</h2>
+  <edc-form-control label="Email">
+    <input name="email" id="email" />
+  </edc-form-control>
+  <edc-form-control label="Password">
+    <input name="password" id="password" type="password" />
+  </edc-form-control>
+
+  <button class="btn-primary">Login</button>
+
+  <p>Don't have an account? <a href="register">Register</a></p>
+</form>
